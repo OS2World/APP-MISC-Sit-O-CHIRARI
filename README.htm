@@ -1,0 +1,383 @@
+<!doctype html public "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <meta name="language" content="en">
+  <meta name="author" content="Takayuki 'January June' Suwa / Beliefia Productions">
+  <meta name="date" content="2002-03-19T21:31:51+09:00">
+  <link rev="made" href="mailto:jjsuwa@sys3175.com">
+  <title>Sit-O-CHIRARI ver.0.05d User's Guide</title>
+ </head>
+
+ <body>
+
+  <h1>Sit-O-CHIRARI ver.0.05d</h1>
+  A nanjaku desktop accessory for OS/2 PM<br>
+  <strong>Copyright 2000-2002 Takayuki 'January June' Suwa / Beliefia Productions.</strong><br>
+  <img alt="the Beliefia Productions logo" src="BPLOGO.png" width="269" height="137">
+  <hr>
+
+  <hr>
+
+  <h1>0. <a name="0">Table of Contents</a></h1>
+  <ul>
+   <li>0. <a href="#0">Table of Contents</a></li>
+   <li>1. <a href="#1">Welcome</a>
+       <ul>
+        <li>1.1. <a href="#1.1">Copyright and Disclaimer</a></li>
+        <li>1.2. <a href="#1.2">System Requirements</a></li>
+        <li>1.3. <a href="#1.3">Contact Author</a></li>
+        <li>1.4. <a href="#1.4">Revision History</a></li>
+       </ul></li>
+   <li>2. <a href="#2">How to Use</a>
+       <ul>
+        <li>2.1. <a href="#2.1">Basic Instructions</a></li>
+        <li>2.2. <a href="#2.2">Advanced Instructions</a></li>
+       </ul></li>
+   <li>3. <a href="#3">Credits</a></li>
+  </ul>
+  <hr>
+
+  <hr>
+
+  <h1>1. <a name="1">Welcome</a></h1>
+  Sit-O-CHIRARI is a nanjaku (means 'soften &amp; weaken' in Japanese) desktop accessory. Small Japanimation girl bitmap named 'Serina' will sit upon current active window.<br>
+  <ul>
+   <li>Her cute pose, with low-angle <tt>:)</tt></li>
+   <li>She sometimes winks <tt>:)</tt></li>
+   <li>She can check POP mailbox arrival</li>
+   <li>Changable her appearence by choosing pane files</li>
+   <li>You can associate MMPM/2 multimedia files to some events</li>
+   <li>'Nanjaku OS/2 Project'-ready, OS/2 native, fully 32-bit, PM multithreaded <strong>nanjaku</strong> application <tt>:)</tt></li>
+  </ul>
+  <a href="#1.3">Please tell me your impressions / requests <tt>:)</tt></a>
+  <hr>
+
+  <h2>1.1. <a name="1.1">Copyright and Disclaimer</a></h2>
+  <ol>
+   <li>'THIS SOFTWARE (CHIRARI.EXE / CHIRARI.DLL) AND WHOLE SET OF DOCUMENTS' (CALLED 'THE PRODUCT') ARE ENTIRELY COPYRIGHTED BY TAKAYUKI 'JANUARY JUNE' SUWA / BELIEFIA PRODUCTIONS, AUTHOR / HOLDER OF THE PRODUCT.</li>
+   <li>THIS PACKAGE OF THE PRODUCT INCLUDES SOME FILES THAT MUST BE DISTRIBUTED UNDER THE &quot;GNU LESSER PUBLIC LICENSE&quot; (LGPL).
+       <ul>
+        <li>&quot;TileWindow&quot; free-shape window library, compiled module (TILEWND.dll)</li>
+        <li>Zipped source code files of &quot;TileWindow&quot; release 1.1.3 build 13 (TILEWNDS.zip)</li>
+        <li>LGPL documentation (COPYING)</li>
+       </ul>
+       THE USE AND / OR DISRIBUTION OF FILES ABOVE MUST BE UNDER THE LGPL.</li>
+   <li>THE PRODUCT IS STILL UNDER DEVELOPMENT AT THE DISTRIBUTION, AND MAY BE OCCURED ANY MODIFICATION / DELETION OF APPEARANCE / FUNCTION OR TERMINATION OF DEVELOPMENT / SERVICE IN FUTURE WITHOUT NOTICE.</li>
+   <li>THE PRODUCT IS PROVIDED 'AS IS' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.</li>
+   <li>IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY DAMAGES, WHETHER IN CONTRACT OR TORT (INCLUDED NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE PRODUCT, EVEN THOUGH SUCH HOLDER HAS BEEN ADVISED OF THE POSSIBILITY OF ANY DAMAGE.</li>
+  </ol>
+  We are regarded you agree disclaimer above at the first execution of CHIRARI.EXE / CHIRARI.DLL. If you disagree above, you must discard all files of the product (except for LGPL'ed ones).
+  <hr>
+
+  <h2>1.2. <a name="1.2">System Requirements</a></h2>
+  <ol>
+   <li><a name="1.2.1"></a>This program will be functioned in environment such as:
+       <ul>
+        <li>Presentation Manager on OS/2 version 4.0, WSeB, MCP, ACP or eCS, applying latest FixPak recommended</li>
+        <li>256+ colored (65536+ recommended) display adapter / PM driver configuration</li>
+       </ul>
+       POP mailbox checking requires that:
+       <ul>
+        <li>TCP/IP for OS/2 version 4 or later, applying latest FixPak recommended</li>
+        <li>Valid POP mailbox account <tt>:)</tt></li>
+       </ul>
+       MMPM/2 multimedia playing of course requires MMPM/2 feature installation.</li>
+   <li><a name="1.2.2"></a>Currently, There is a problem that this program will cause PM freeze together with Java 1.3 window. We recommend not to use this program when any Java 1.3 applications are launched.<br>
+       Regretfully, no solvable actions in this program.</li>
+  </ol>
+  <hr>
+
+  <h2>1.3. <a name="1.3">Contact Author</a></h2>
+  Email to Takayuki 'January June' Suwa:
+  <ul>
+   <li><a href="mailto:jjsuwa@sys3175.com">mailto:jjsuwa@sys3175.com</a></li>
+  </ul>
+  <hr>
+
+  <h2>1.4. <a name="1.4">Revision History</a></h2>
+  <ul>
+   <li><strong>ver.0.01</strong> - February 16th,2000
+       <ol>
+        <li>Junk works in intermission of another project <tt>:)</tt> In 5 hours <tt>:)</tt></li>
+       </ol></li>
+   <li><strong>ver.0.01a</strong> - February 17th,2000
+       <ol>
+        <li>Modified sitting position to frame bottom edge if not enough sitting space between frame and screen top ones.</li>
+        <li>Replaced 'Sitting position' control, from spin button to linear slider.</li>
+       </ol></li>
+   <li><strong>ver.0.01b</strong> - February 17th,2000
+       <ol>
+        <li>Modified to winking and others.</li>
+        <li>Wrote document in Japanese.</li>
+       </ol></li>
+   <li><strong>ver.0.01c</strong> - February 17th,2000
+       <ol>
+        <li>Modified to consider height of girl image at sitting position determination.</li>
+        <li>Built/Added Japanese resource DLL.</li>
+       </ol></li>
+   <li><strong>ver.0.02 (international release)</strong> - February 22nd,2000
+       <ol>
+        <li>Named the girl 'Serina'. Thanks to Kunihiko 'Achain' Aizawa for nice naming <tt>:)</tt></li>
+        <li>Added 'Process priority boost' to properties.</li>
+        <li>Wrote document in English (JUST THIS).</li>
+       </ol></li>
+   <li><strong>ver.0.03</strong> - February 23rd,2000
+       <ol>
+        <li>Modified to sitting position determination to be less protrusion out of screen.
+        <li>Added 'Mouse event transparency' to properties.</li>
+       </ol></li>
+   <li><strong>ver.0.03a</strong> - February 24th,2000
+       <ol>
+        <li>Fixed unseen problem on Warp3.</li>
+       </ol></li>
+   <li><strong>ver.0.03b</strong> - March 1st,2000
+       <ol>
+        <li>Modified to repaint after position changed.</li>
+        <li>Added another version of 'Serina' bitmap <tt>:)</tt></li>
+       </ol></li>
+   <li><strong>ver.0.03c</strong> - March 6th,2000
+       <ol>
+        <li>Fixed some resource leakage (or not, please report).</li>
+       </ol></li>
+   <li><strong>ver.0.03d</strong> - April 24th,2000
+       <ol>
+        <li>Improved internal libraries.</li>
+        <li>Fixed installer problem.</li>
+       </ol></li>
+   <li><strong>ver.0.03e</strong> - May 19th,2000
+       <ol>
+        <li>Rewritten active frame window seeking logic.</li>
+       </ol></li>
+   <li><strong>ver.0.03f</strong> - June 23rd,2000
+       <ol>
+        <li>Fixed 'sitting upon hidden active window' problem.</li>
+       </ol></li>
+   <li><strong>ver.0.03g</strong> - August 12th,2000
+       <ol>
+        <li>Improved internal libraries.</li>
+       </ol></li>
+   <li><strong>ver.0.04</strong> - December 16th,2000
+       <ol>
+        <li>Redesigned wholly. Used &quot;TileWindow&quot; for free-shape window and separated POP mailbox check facility as DLL.</li>
+        <li>Added pane file selection feature for changing appearence.</li>
+        <li>Added MMPM/2 multimedia file playing feature on some events.</li>
+        <li>Added random murmuring (undocumented) feature from 'Cookie' text file.</li>
+       </ol></li>
+   <li><strong>ver.0.04a</strong> - April 8th,2001
+       <ol>
+        <li>Rebuilt due to changing specs of &quot;TileWindow&quot; release 1.1.0 build 10.</li>
+        <li>Changed build information for BLDLEVEL.exe to more exact.</li>
+       </ol></li>
+   <li><strong>ver.0.05</strong> - May 1st,2001
+       <ol>
+        <li>Added font changing feature for cartoon baloon messages.</li>
+        <li>Added opening Beliefia Productions(tm) logo display.</li>
+        <li>Replaced &quot;TileWindow&quot; with release 1.1.0 build 11.</li>
+        <li>Removed some drawing interference between popup menu and cartoon baloon message.</li>
+        <li>Enlarged widths of some controls in property dialog pages a little.</li>
+       </ol></li>
+   <li><strong>ver.0.05a</strong> - July 20th,2001
+       <ol>
+        <li>Changed to that she don't sit upon &quot;Peek-a-boo&quot; of Ken'ichi 'Kurake' Kusakabe.</li>
+        <li>Added <a href="#1.2.2">'Java 1.3 Interference'</a>.</li>
+       </ol></li>
+   <li><strong>ver.0.05b</strong> - September 7th,2001
+       <ol>
+        <li>Changed internal 1/10sec interval event, from Window Timer to using another thread.</li>
+       </ol></li>
+   <li><strong>ver.0.05c</strong> - October 1st,2001
+       <ol>
+        <li>Fixed problem that turning over pages of Property dialog caused loosing input focus.</li>
+        <li>Changed repeated events interval to dynamic.</li>
+        <li>Changed to that windows sat by her would be invalidated when moving / hiding.</li>
+       </ol></li>
+   <li><strong>ver.0.05d</strong> - February 4th,2002
+       <ol>
+        <li>Replaced &quot;TileWindow&quot; with release 1.1.3 build 13.</li>
+        <li>Withdrew frame window force redrawing.</li>
+        <li>Resolved some interferences in default frame window procedure when moved / hidden.</li>
+        <li>Improved / enriched property dialog design.</li>
+       </ol></li>
+  </ul>
+  <hr>
+
+  <hr>
+
+  <h1>2. <a name="2">How to use</a></h1>
+  <hr>
+
+  <a name="2.1"></a>
+  <h2>2.1. Basic Instructions</h2>
+  <ol>
+   <li>To launch, open 'Sit-O-CHIRARI' WPS program object in same name folder. At the first execution, 'Product Information' dialog will be displayed.<br>
+       <a href="PRODIN_E.png">Image of 'Product Information' dialog</a></li>
+   <li>In default, 'Serina' sits upon either top edge of current active frame window or rim of bottom one, at leftmost. Sorry, she cannot be dragged nor moved to directly.<br>
+       <a href="LEGEND_E.png">Image of standard pane 'Serina the schoolgirl'</a></li>
+   <li>Messages from her will be shown in right cartoon baloon. After a few seconds, this baloon will be hidden automatically.</li>
+   <li>In order to change font face / size of her message, drag appropriate font from WPS Font Palette and drop it to cartoon baloon <strong>while baloon shows</strong> <tt>:)</tt></li>
+   <li>To close her,
+       <ul>
+        <li>Click right mouse button on 'Sit-O-CHIRARI' window (popup menu will be shown), then choose 'Close'.</li>
+        <li>Use 'Window List' <tt>:)</tt></li>
+       </ul></li>
+  </ol>
+  <hr>
+
+  <a name="2.2"></a>
+  <h2>2.2. Advanced Instructions</h2>
+  <ol>
+   <li>Clicking right mouse button on 'Sit-O-CHIRARI' window shows popup menu.
+       <table border="1"><tbody><tr><td>
+        <dl>
+         <dt><strong>Properties...</strong></dt>
+          <dd>Configures preferences of 'Sit-O-CHIRARI'. See below.</dd>
+         <dt><strong>Panes</strong></dt>
+          <dd>Listing of available panes in submenu. Checked item is current pane.<br>
+              Choosing submenu item will change appearence immediately. Baloon messages will be changed also.<br>
+              Some followed panes are included:
+              <dl>
+               <dt><strong>'Serina the maidservant' pane (MAID.pnl)</strong></dt>
+                <dd>Just a title, maidservant costume <tt>:)</tt><br>
+                    <a href="MAID.png">Image of 'Serina the maidservant' pane</a></dd>
+              </dl></dd>
+         <dt><strong>Check mailbox now</strong></dt>
+          <dd>Checks POP mailbox arrival immediately. 'Mailbox check' settings are required. See below.</dd>
+         <dt><strong>Chastise now!</strong></dt>
+          <dd>Shows message suitable for your choice <tt>:)</tt> For stress alleviation...</dd>
+         <dt><strong>Help</strong></dt>
+          <dd>Displays some helpful informations.
+              <dl>
+               <dt><strong>User's guide</strong></dt>
+                <dd>Displays User's guide (this document), using Web brouser associated to WPS URL object.</dd>
+               <dt><strong>Product information...</strong></dt>
+                <dd>Displays 'Product Information' dialog.</dd>
+              </dl></dd>
+         <dt><strong>Close</strong></dt>
+          <dd>Closes 'Sit-O-CHIRARI'.</dd>
+        </dl>
+       </td></tr></tbody></table></li>
+   <li>In order to modify 'Sit-O-CHIRARI' preferences, choose 'Properties...' of popup menu. Changes will be applied by 'Apply' button. Pressing 'Cancel' throws any changes away.
+       <table border="1"><tbody>
+        <tr><td><strong>'General' page</strong></td></tr>
+        <tr>
+         <td>
+          General settings.
+          <dl>
+           <dt><strong>Double click action</strong></dt>
+            <dd>Specifies issueing action by double-clicking her. Choose one from 'None', 'Check mailbox now' or 'Chastise now!'.</dd>
+           <dt><strong>Process priority boost</strong></dt>
+            <dd>Specifies whether boosting process execution or not. More smooth drawing / movement, but may stress your system.</dd>
+           <dt><strong>Mouse event transparency</strong></dt>
+            <dd>Specifies whether passing any mouse events through 'Sit-O-CHIRARI' or not. Useful if you feel your mouse operations are hindered by her.<br>
+                To show popup menu if enabled (or any mouse actions such as double-click or drag &amp; drop), do with pressing both Shift and Ctrl keys.</dd>
+           <dt><strong>Reset font setting</strong></dt>
+            <dd>If checked, current font setting for cartoon baloon messages will be reset to system default.</dd>
+          </dl>
+         </td>
+        </tr>
+       </tbody></table>
+       <table border="1"><tbody>
+        <tr><td><strong>'Sitting' page</strong></td></tr>
+        <tr>
+         <td>
+          Settings releted to her sitting position.
+          <dl>
+           <dt><strong>Horizontal position</strong></dt>
+            <dd>Specifies her horizontal position in percent, with relative ratio of sat frame window's width. 0% corresponds to leftmost and 100% corresponds to rightmost.</dd>
+           <dt><strong>Vertical position</strong></dt>
+            <dd>Specifies her vertical position alignment you want. Choose one from 'On top edge', 'On bottom edge' or 'Center-aligned'.</dd>
+          </dl>
+         </td>
+        </tr>
+       </tbody></table>
+       <table border="1"><tbody>
+        <tr><td><strong>'Mailbox check' page</strong></td></tr>
+        <tr>
+         <td>
+          Settings in order to check POP mailbox arrival. Checking result will be shown in cartoon baloon.
+          <dl>
+           <dt><strong>Enable POP mailbox checking</strong></dt>
+            <dd>If checked, mailbox checking becomes enable. Cannot be checked in non-TCP/IP-aware enironments.</dd>
+           <dt><strong>POP server</strong></dt>
+            <dd>Specifies valid address and port number of POP mailbox service server. Port number of 0 implies 110, POP service default.</dd>
+           <dt><strong>POP user and password</strong></dt>
+            <dd>Specified valid user name and password of checking POP mailbox account.</dd>
+           <dt><strong>Mailbox checking interval</strong></dt>
+            <dd>Specifies mailbox checking interval in minutes. 0 implies no automatic checking.</dd>
+           <dt><strong>Recaptioning with</strong></dt>
+            <dd>Specifies recaptioning method of hidden baloon. Choose from either 'Clicking mouse1 button' or 'Bluring mouse pointer'.</dd>
+          </dl>
+         </td>
+        </tr>
+       </tbody></table>
+       <table border="1"><tbody>
+        <tr><td><strong>'MMPM/2' page</strong></td></tr>
+        <tr>
+         <td>
+          Settings in order to associate MMPM/2 multimedia playing to some events.
+          <dl>
+           <dt><strong>Enable MMPM/2 multimedia play</strong></dt>
+            <dd>If checked, multimedia playing becomes enable. Cannot be checked in non-MMPM/2-aware environments.</dd>
+           <dt><strong>Mail absent</strong></dt>
+            <dd>Specifies multimedia file that corresponds to absent of arrival, as result of POP mailbox checking.</dd>
+           <dt><strong>Mail present</strong></dt>
+            <dd>Specifies multimedia file that corresponds to present one or more of arrival, as result of POP mailbox checking.</dd>
+           <dt><strong>Mail error</strong></dt>
+            <dd>Specifies multimedia file that corresponds to any errors occured, as result of POP mailbox checking.</dd>
+           <dt><strong>Chastising</strong></dt>
+            <dd>Specifies multimedia file that corresponds to issueing 'Chastise now!' action <tt>:)</tt></dd>
+          </dl>
+          Pressing right button of each entryfields will open standard file dialog.<br>
+          In order not to associate file to specified event, leave correspond item empty.
+         </td>
+        </tr>
+       </tbody></table></li>
+  </ol>
+  <hr>
+
+  <hr>
+
+  <a name="3"></a>
+  <h1>3. Credits</h1>
+  <dl>
+   <dt><strong>Development</strong></dt>
+    <dl>
+     <dt><strong>Programming</strong></dt>
+      <dd>Takayuki 'January June' Suwa / Beliefia Productions</dd>
+    </dl>
+    <dl>
+     <dt><strong>Graphics</strong></dt>
+      <dd>Takayuki 'January June' Suwa / Beliefia Productions</dd>
+    </dl>
+    <dl>
+     <dt><strong>Documentation</strong></dt>
+      <dd>Takayuki 'January June' Suwa / Beliefia Productions</dd>
+    </dl>
+    <dl>
+     <dt><strong>Testing</strong></dt>
+      <dd>Takayuki 'January June' Suwa / Beliefia Productions</dd>
+      <dd>Kunihiko 'Achain' Aizawa / Circle Nutshell</dd>
+      <dd>(Invited!!)</dd>
+    </dl>
+   <dt><strong>Special thanks to</strong></dt>
+    <dl>
+     <dt><strong>Masaharu 'Densuke' Nagata</strong></dt>
+      <dd>He allowed me to replicate WARP4 Developer's Toolkit <strong>UNDER LEGAL LICENSE</strong>. Thanks a lot.</dd>
+    </dl>
+  </dl>
+  <hr>
+
+  <hr>
+
+  Copyright 2000-2002 Takayuki 'January June' Suwa / Beliefia Productions.<br>
+  Sit-O-CHIRARI, Beliefia Productions and its logo design are trademarks of Beliefia Productions. All rights reserved.<br>
+  Other copyrighted works (images, musics, programs, and so on), trademarks and servicemarks in this document are owned by their respective owners.<br>
+  <br>
+  [This document is HTML3.2(Wilbur)-compliant.]
+
+ </body>
+
+</html>

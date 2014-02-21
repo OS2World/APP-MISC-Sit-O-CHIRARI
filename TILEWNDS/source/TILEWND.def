@@ -1,0 +1,39 @@
+; TILEWND.def - "TileWindow" free-shape window library, public release 1.1.3 (build 13)
+;   Copyright (c) 1999-2002 Takayuki 'January June' Suwa
+;
+; This library is free software; you can redistribute it and/or
+; modify it under the terms of the GNU Library General Public
+; License as published by the Free Software Foundation; either
+; version 2 of the License, or (at your option) any later version.
+;
+; This library is distributed in the hope that it will be useful,
+; but WITHOUT ANY WARRANTY; without even the implied warranty of
+; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+; Library General Public License for more details.
+;
+; You should have received a copy of the GNU Library General Public
+; License along with this library; if not, write to the
+; Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+; Boston, MA 02111-1307, USA. */
+
+LIBRARY TILEWND
+DESCRIPTION "@#JJSuwa:1.1#@##1##Fri Feb 08 07:21:20 2002 ivory::::3::@@ 'TileWindow' free-shape window library, build 13"
+PROTMODE
+EXPORTS
+ __TileWindowVersionInfo         @ 1
+ GpiCreateRegionFromMaskBitmap   @ 2
+ GpiCreatePSMDCB                 @ 3
+ GpiCreatePSMDCBFromMemory       @ 4
+ GpiCreatePSMDCBFromResource     @ 5
+ GpiCreatePSMDCBFromFile         @ 6
+ GpiDestroyPSMDCB                @ 7
+ WinDefTileWindowProc            @ 8
+ WinCreateTileWindow             @ 9
+ WinDestroyTileWindow            @ 10
+ WinSetTileWindowPos             @ 11
+ WinQueryTileWindowPos           @ 12
+ WinInvalidateTileWindowRect     @ 13
+ WinEnableTileWindow             @ 14
+ WinAdjustTileWindowPosFromOwner @ 15
+ WinRegisterTileWindow           @ 16
+
